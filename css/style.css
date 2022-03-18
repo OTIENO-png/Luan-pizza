@@ -3,9 +3,16 @@ h1{
     font-size: 40px;
     font-style: italic;
     color: blue;
+    font-weight: bolder;
 }
 body {
     background-image: url(/imgs/piza2.jpg);
     background-color: #cccccc;
     color: aqua;
   }
+  p{
+    text-align: center;
+    font-size: 35px;
+    font-style: italic;
+    color: rgb(0, 255, 42);
+}
