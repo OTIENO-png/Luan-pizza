@@ -65,7 +65,7 @@ img:hover {
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 45px;
 }
 
 /* Clear floats after image containers */
@@ -73,4 +73,7 @@ img:hover {
   content: "";
   clear: both;
   display: table;
+}
+table, th, td {
+  border:1px solid black;
 }
