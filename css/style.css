@@ -37,4 +37,10 @@ button:hover {
   button:active {
     background-color:rgb(0, 30, 128);
   }
-  
+  img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+
+}
