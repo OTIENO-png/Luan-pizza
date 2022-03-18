@@ -23,3 +23,17 @@ p{
     color: rgb(200, 255, 0);
     font-display: fallback;
 }
+button{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(200, 255, 0);
+    font-weight: bolder;
+}
+  
+button:hover {
+    background-color: rgb(255, 0, 55);
+  }
+  button:active {
+    background-color:rgb(0, 30, 128);
+  }
