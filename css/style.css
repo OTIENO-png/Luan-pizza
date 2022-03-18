@@ -16,3 +16,10 @@ body {
     font-style: italic;
     color: rgb(0, 255, 42);
 }
+p{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(200, 255, 0);
+    font-display: fallback;
+}
