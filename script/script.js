@@ -10,7 +10,7 @@ $(document).ready(function () {
     toppings_prices = {olives:100,pepperon:400,cheese:300}
     crust_prices ={crispy:400,gluten_free:250,shufferd:300} 
      
-     var total_cost = size_prices[size] + toppings_prices[topping] + crust_prices[crust]
+    var total_cost = size_prices[size] + toppings_prices[topping] + crust_prices[crust]
     
     
     // jQuery button click event to add a row
@@ -44,7 +44,7 @@ $(document).ready(function () {
             <th class="text-center">
             <p>Total cost</p>
             </th>
-            var total_cost = size_prices[size] + toppings_prices[topping] + crust_prices[crust]
+            total_cost
 
             </tr>`);
     
@@ -65,7 +65,7 @@ $(document).ready(function () {
             </td>
             
             <td class="text-center">
-                 <p> 600 </p>
+                 <p> ${total_cost} </p>
             </td>
 
             </tr>`);
@@ -91,7 +91,7 @@ $(document).ready(function () {
             </td>
             
             <td class="row-index text-center">
-            <p>300</p>
+            <p> ${total_cost} </p>
             </td>
 
             </tr>`);
