@@ -1,18 +1,18 @@
 function popupateTable(){
     
-      var crust = {
-        "Crispy": 250, "Gluten free": 600, "Stuffed": 1000
-      };
-    var Toppings = {
-        "Olives": 270, "Cheese":350, "Peppron": 250
-      };
-    
     var crust = document.getElementById("crust").value; 
     var topping = document.getElementById("toppings").value; 
     var size = document.getElementById("size").value; 
-    var size = {
-        "small": 250, "Medium": 500, "Large": 1000
-      }; 
+
+    size_prices = {small:50,medium:700,large:1000}
+    toppings_prices = {olives:100,pepperon:400,cheese:300}
+    crust_prices ={crispy:400,gluten_free:250,shufferd:300}
+     
+     
+     var total_cost = size_prices[size] + toppings_prices[topping] + crust_prices[crust]
+     console.log(size_prices[size]);
+     console.log(toppings_prices[topping]);
+     console.log(crust_prices[crust]);
 
     var table = document.createElement('table');
 
@@ -26,10 +26,10 @@ function popupateTable(){
     var td5 = document.createElement('td');
 
     var text1 = document.createTextNode(1);
-    var text2 = document.createTextNode(size);
-    var text3 = document.createTextNode(crust);
-    var text4 = document.createTextNode(topping);
-    var text5 = document.createTextNode("");
+    var text2 = document.createTextNode(size + '-' + size_prices[size]);
+    var text3 = document.createTextNode(crust+ '-' + toppings_prices[topping]);
+    var text4 = document.createTextNode(topping+ '-' + crust_prices[crust]);
+    var text5 = document.createTextNode("kshs" + total_cost);
 
     td1.appendChild(text1);
     td2.appendChild(text2);
@@ -45,4 +45,11 @@ function popupateTable(){
     table.appendChild(tr);
     //}
     document.body.appendChild(table);
+}
+var pizzaPrice = 0;
+
+function Pizza(size,toppings,pizzaPrice) {
+  this.size = size;
+  this.toppings = toppings;
+  this.pizzaPrice = 0;
 }
