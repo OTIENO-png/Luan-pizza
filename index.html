@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity=
+  "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script src=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+
     <button>HOME</button>
     <button>ABOUT</button>
     <button><a href="https://www.google.co.ke/intl/en/about/products?tab=mh">CONTACT</a></button>
@@ -50,7 +66,7 @@
         <div class="centered"><strong>Toppings</strong></div>
       
             <label for="Toppings">Choose piza toppings:</label>
-            <select id="toppings" name="toppings">
+            <select id="toppings" name="topping">
               <option value="olives">Olives</option>
               <option value="cheese">Cheese</option>
               <option value="pepperon">Pepperon</option>
@@ -59,27 +75,30 @@
         </div>
       </div>
      </div>
-     <table style="width:100%">
-      <tr>
-        <td>"1"</td>
-        <td>Pizza size</td>
-        <td>Toppings</td>
-        <td>Crust</td>
-        <td>Total</td>
-        
-      </tr>
-    </table>
-    <br>
-    <center>
-      <button onclick="popupateTable()">total</button>
-    </center>
-    
-     <p>social media platform</p>
-      <center>
-       <button type="button"><img src="imgs/facebook.png" height ="30" width="35"></button>
-       <button type="button"><img src="imgs/g_plus.png" height ="30" width="35"></button>
-       <button type="button"><img src="imgs/pinterest.png" height ="30" width="35"></button>
-      </center>
+     <div class="container pt-4">
+      <div class="table-responsive">
+      <table class="table table-bordered">
+          <thead id ="thead">
+          </thead>
+          <tbody id="tbody">
+  
+          </tbody>
+      </table>
+      </div>
+      <button class="btn btn-md btn-primary"
+      id="addBtn" type="button">
+          Order
+      </button>
+      <button class="btn btn-md btn-primary"
+      id="addBtnAnother" type="button" style="display:none;">
+          Add another
+      </button>
+      <button class="btn btn-md btn-primary"
+      id="checkoutbutton" type="button" style="display:none;">
+          Checkout
+      </button>
+  </div>
     
 </body>
+
 </html>
