@@ -91,12 +91,37 @@
       </button>
       <button class="btn btn-md btn-primary"
       id="addBtnAnother" type="button" style="display:none;">
-          Add another
+          Add another Order
       </button>
-      <button class="btn btn-md btn-primary"
+      <button class="btn btn-md $('#yes').on('click', function () {
+        var x = document.getElementById("yes");
+        x.style.display = "none";
+
+        var order_x = document.getElementById("no");
+        order_x.style.display = "none";
+        
+    })btn-primary"
       id="checkoutbutton" type="button" style="display:none;">
           Checkout
       </button>
+      <div id ="cost_disply" style="display: none;">
+        <p id ="totalCost">]The total is: </p>
+        <h2 id ="location"> Would you like delivery for an additional 200?
+        </h2>
+        <center>
+        <button class="btn btn-md btn-primary" id="yes" type="button" style="margin:auto;">
+          Yes
+      </button>
+      <button class="btn btn-md btn-primary" id="no" type="button" style="margin:auto;">
+        No
+    </button>
+    </center>
+
+
+
+      </div>
+      
+
   </div>
     
 </body>
