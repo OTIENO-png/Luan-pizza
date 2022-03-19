@@ -11,6 +11,8 @@
     <title>Luan pizza</title>
 </head>
 <body>
+  <script src="script/script.js">
+  </script>
     <h1>WELCOME TO LUAN PIZZA.</h1>
     <h2>Share grand exeperience</h2>
     <p>Place an order with us with we deliver to you.</p>
@@ -20,7 +22,7 @@
         <img src="imgs/pizza.jpeg" height ="150" width="200"> 
         <div class="centered"><strong>Piza size</strong></div>
         
-            <label for="Piza size">Choose piza size:</label>
+            <label for="Piza_size">Choose piza size:</label>
             <select id="size" name="size">
               <option value="small">Small</option>
               <option value="medium">Medium</option>
@@ -48,7 +50,7 @@
         <div class="centered"><strong>Toppings</strong></div>
       
             <label for="Toppings">Choose piza Crust:</label>
-            <select id="crust" name="Crust">
+            <select id="toppings" name="toppings">
               <option value="olives">Olives</option>
               <option value="cheese">Cheese</option>
               <option value="pepperon">Pepperon</option>
@@ -59,14 +61,19 @@
      </div>
      <table style="width:100%">
       <tr>
-        <td>Order No</td>
+        <td>"1"</td>
         <td>Pizza size</td>
         <td>Toppings</td>
-        <td>Cost</td>
+        <td>Crust</td>
         <td>Total</td>
         
       </tr>
     </table>
+    <br>
+    <center>
+      <button onclick="popupateTable()">total</button>
+    </center>
+    
      <p>social media platform</p>
       <center>
        <button type="button"><img src="imgs/facebook.png" height ="30" width="35"></button>
