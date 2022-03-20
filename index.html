@@ -19,7 +19,7 @@
 
     <button>HOME</button>
     <button>ABOUT</button>
-    <button><a href="https://www.google.co.ke/intl/en/about/products?tab=mh">CONTACT</a></button>
+    <button>CONTACT</a></button>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -140,17 +140,11 @@ window.onclick = function(event) {
       id="addBtnAnother" type="button" style="display:none;">
           Add another Order
       </button>
-      <button class="btn btn-md $('#yes').on('click', function () {
-        var x = document.getElementById("yes");
-        x.style.display = "none";
-
-        var order_x = document.getElementById("no");
-        order_x.style.display = "none";
-        
-    })btn-primary"
-      id="checkoutbutton" type="button" style="display:none;">
+      <center>
+      <button class="btn btn-md btn-primary" id="checkoutbutton" type="button" style="display:none;">
           Checkout
       </button>
+     </center>
       <div id ="cost_disply" style="display: none;">
         <center>
         <p id ="totalCost">The total is: </p>
@@ -168,17 +162,18 @@ window.onclick = function(event) {
     </center>
     <center>
     <form id = "submit_location" style="display:none;">
-      <label for="locationname">Enter you location:</label>
+      <label for="locationname">Enter your location:</label>
       <input type="text" id="locationame" name="locationname" value="">
+      <button class="btn btn-md btn-primary" id="complete_order" type="button" style="margin:auto;">
+        complete
+    </button>
     </form>
     </center>
    
     <center>
       <p id ="delivery" style="display: block;"> </p>
     </center>
-    <button class="btn btn-md btn-primary" id="complete_order" type="button" style="margin:auto;">
-      complete
-  </button>
+    
       </div>
       
 

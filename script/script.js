@@ -172,9 +172,11 @@ $(document).ready(function () {
         var submit_form  = document.getElementById("submit_location"); 
         submit_form.style.display = "none";
         //show paragraph
-        var location  = document.getElementById("submit_location").value; 
-        var par = "Your order has been received! We are dispatching our rider to "+ location
+        var location  = document.getElementById("locationame").value; 
+        var par = "Your order has been received! We are dispatching our rider to  "+ location
         $("#delivery").replaceWith(par);
+        var complete_order_x  = document.getElementById("complete_order"); 
+        complete_order_x.style.display = "none";
     })
     });
 
