@@ -140,16 +140,41 @@ $(document).ready(function () {
         x.style.display = "none";
         var order_x = document.getElementById("no");
         order_x.style.display = "none";
+        var location_x  = document.getElementById("location"); 
+        location_x.style.display = "none";
+
+        var submit_form  = document.getElementById("submit_location"); 
+        submit_form.style.display = "block";
+
+        var checkout_cost = total_order_cost +200
+        $("#totalCost").replaceWith("The total is: " + checkout_cost);
+        console.log(total_order_cost)
         
         
     })
     $('#no').on('click', function () {
         var x = document.getElementById("no");
         x.style.display = "none";
+        var location_x  = document.getElementById("location"); 
+        location_x.style.display = "none";
+        
+        var submit_form  = document.getElementById("submit_location"); 
+        submit_form.style.display = "block";
 
         var order_x = document.getElementById("yes");
         order_x.style.display = "none";
+
+    
         
+    })
+    $('#complete_order').on('click', function () {
+        // hide the form 
+        var submit_form  = document.getElementById("submit_location"); 
+        submit_form.style.display = "none";
+        //show paragraph
+        var location  = document.getElementById("submit_location").value; 
+        var par = "Your order has been received! We are dispatching our rider to "+ location
+        $("#delivery").replaceWith(par);
     })
     });
 
