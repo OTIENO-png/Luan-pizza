@@ -146,7 +146,7 @@ $(document).ready(function () {
         var submit_form  = document.getElementById("submit_location");
         submit_form.style.display = "block";
 
-        var checkout_cost = total_order_cost +200
+        var checkout_cost = total_order_cost +700
         $("#totalCost").replaceWith("The total is: " + checkout_cost);
         console.log(total_order_cost)
 

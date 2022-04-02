@@ -163,3 +163,23 @@ td {
   background-color: #5cb85c;
   color: white;
 }
+#size{
+  color: #5cb85c;
+  text-decoration: underline;
+}
+button{
+  background-color:darkgoldenrod
+}
+img:hover{
+  color: #000;
+  border-radius: 25%;
+  background-color: #000;  
+}
+#home{
+  float:right;
+  margin-right: 10px;
+}
+#about{
+  float: right;
+  margin-right: 30px;
+}

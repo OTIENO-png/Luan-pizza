@@ -18,9 +18,9 @@
   "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
   </script>
 
-    <button>HOME</button>
-    <button>ABOUT</button>
-    <button>CONTACT</a></button>
+    <button id="home">HOME</button>
+    <button id="about">ABOUT</button>
+    <button id="contact">CONTACT</a></button>
     <button>KENYA</button>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@
 <body>
   
   <!-- Trigger/Open The Modal -->
-<button id="myBtn">CUSTOMER</button>
+<button id="myBtn" title="click here">CUSTOMER</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -149,12 +149,11 @@ window.onclick = function(event) {
       </button>
      </center>
       <div id ="cost_disply" style="display: none;">
-        <center>
+      <center>
         <p id ="totalCost">The total is: </p>
-      </center>
-        <h2 id ="location"> Would you like delivery for an additional 200?
+       </center>
+        <h2 id ="location"> Would you like delivery for an additional 700?
         </h2>
-        
         <center>
         <button class="btn btn-md btn-primary" id="yes" type="button" style="margin:auto;">
           Yes
@@ -174,18 +173,16 @@ window.onclick = function(event) {
     </center>
    
     <center>
+      <div>
       <p id ="delivery" style="display: block;"> </p>
-    </center>
-    
       </div>
-      
-
-  </div>
-  <center>
+    </center>
+    </div>
+    <center>
     <div>
       <button type="button"><img src="imgs/facebook.png" height ="30" width="35"></button>
     </div>
-  </center>
+    </center>
   
     
 </body>
