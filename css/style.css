@@ -183,3 +183,8 @@ img:hover{
   float: right;
   margin-right: 30px;
 }
+#location{
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+}
