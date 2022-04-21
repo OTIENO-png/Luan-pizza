@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--making a webpage responsive-->
   <link rel="stylesheet" href=
   "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity=
@@ -21,6 +21,8 @@
     <button id="home">HOME</button>
     <button id="about">ABOUT</button>
     <button id="contact">CONTACT</a></button>
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn" title="click here">CUSTOMER</button>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,19 +30,22 @@
     <title>Luan pizza</title>
 </head>
 <body>
+  <form action=""></form>
   <style>
     body {
-      background-image: url("imgs/dow.jpg"), url("imgs/dow.jpg");
+      background-image: url("imgs/back2.webp"), url("imgs/back2.webp");
       background-color: #cccccc;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
-      background-size: 35cm;
+      background-size: 70cm;
+    }
+    #no{
+      display: inline-flex;
     }
   </style>
   
-  <!-- Trigger/Open The Modal -->
-<button id="myBtn" title="click here">CUSTOMER</button>
+
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -58,8 +63,17 @@
   </div>
 
 </div>
+<script>
+  $(document).ready(function () {
+    $("#no").click(function () {
+      $("#locationname").hide();
+    });
+    });
+</script>
+
 
 <!--<script>
+  
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -178,6 +192,7 @@ window.onclick = function(event) {
       <button class="btn btn-md btn-primary" id="complete_order" type="button" style="margin:auto;">
         complete
     </button>
+    <p id="no22"></p>
     </form>
     </center>
    

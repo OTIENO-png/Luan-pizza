@@ -152,13 +152,13 @@ $(document).ready(function () {
 
 
     })
-    $('#no').on('click', function () {
-        var x = document.getElementById("no");
-        x.style.display = "none";
+   $('#no').on('click', function () {
+      var x = document.getElementById("no");
+       x.style.display = "none";
         var location_x  = document.getElementById("location");
         location_x.style.display = "none";
 
-        var submit_form  = document.getElementById("submit_location");
+        var submit_form  = document.getElementById("no22");
         submit_form.style.display = "block";
 
         var order_x = document.getElementById("yes");

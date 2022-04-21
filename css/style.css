@@ -163,9 +163,9 @@ td {
   background-color: #5cb85c;
   color: white;
 }
-#size{
+/*#size{
   color: #5cb85c;
-  text-decoration: underline;
+  text-decoration: underline;*/
 }
 button{
   background-color:darkgoldenrod
@@ -173,7 +173,7 @@ button{
 img:hover{
   color: #000;
   border-radius: 25%;
-  background-color: #000;  
+  background-color: #000;
 }
 #home{
   float:right;
