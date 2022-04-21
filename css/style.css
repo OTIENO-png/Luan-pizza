@@ -148,9 +148,9 @@ td {
 }
 
 .modal-header {
-  padding: 2px 16px;
+  padding: 0px 16px;
 
-  background-color: #5cb85c;
+/*  background-color: #5cb85c;*/
   color: white;
 }
 
@@ -187,4 +187,12 @@ img:hover{
   color: black;
   font-weight: bolder;
   font-style: italic;
+}
+fieldset{
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+    margin: auto;width: 1000px;
+    border-radius: 25px
+
 }
